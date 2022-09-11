@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="lobby.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/lobby.css">
 </head>
 <body>
     <main id="lobby-container">
@@ -31,7 +31,7 @@
     form.addEventListener ("submit", (e) => {
         e.preventDefault ();
         let inviteCode = e.target.inviteLink.value;
-        window.location = `index.html?room=${inviteCode}`;
+        window.location = `../index.html?room=${inviteCode}`;
     })
 </script>
 </html>

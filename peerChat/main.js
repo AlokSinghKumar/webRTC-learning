@@ -22,7 +22,7 @@ let remoteStream;
 let peerConnection;
 
 if (!roomId) {
-    window.location = "lobby.html";
+    window.location = "/pages/lobby.html";
 }
 
 const servers = {
