@@ -36,11 +36,13 @@
 }
 
 #controls {
-    position: fixed;
+    background-color:  "red";
+    position: absolute;
+    width : 100%;
     bottom : 20px;
-    left : 43%;
     transform: translateX (-50px);
     display : flex;
+    justify-content: center;
     gap : 1em;
 }
 
@@ -63,14 +65,26 @@
     background-color: rgb(255, 80, 80, 1);
 }
 
+.gg-format-slash {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transform: rotate(120deg) scale(var(--ggs,1));
+    width: 5px;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+    /* color : white; */
+}
+
 @media screen and (max-width:600px) {
     .smallFrame {
-        height : 80px;
-        width : 120px;
+        height : 160px;
+        width : 100px;
     }
 
     .control-container img {
-        height : 10px;
-        width : 20px;
+        height : 15px;
+        width : 15px;
     }
 }
